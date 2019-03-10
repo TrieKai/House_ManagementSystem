@@ -1,0 +1,84 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!--<link rel="icon" href="/Content/AssetsBS3/img/favicon.ico">-->
+		<title>雅舍套房出租網</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/house.css" rel="stylesheet">
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTrQI6EKTZJnoRFgsFnl6iPDGqqbC2bRU"></script>
+		<!--[if lt IE 9]><script src=~/Scripts/AssetsBS3/ie8-responsive-file-warning.js></script><![endif]-->
+		<!--<script src="/Scripts/AssetsBS3/ie-emulation-modes-warning.js"></script>-->
+		<!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script><script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]-->
+		<!--<link href="/Content/AssetsBS3/examples/carousel.css" rel="stylesheet">-->
+	</head>
+
+	<body>
+		<div class="navbar-wrapper" style="position: absolute;width: 100%;">
+			<!--NavBar-->
+			<div class="container" id="NavIndex"></div>
+		</div>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" style="position: relative;">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item" style="width:auto;height:80%;"><img src="image/micron.jpg" alt="First slide"></div>
+				<div class="item" style="width:auto;height:80%;"><img src="image/dormroom.jpg" alt="Second slide"></div>
+				<div class="item active" style="width:auto;height:80%;"><img src="image/landscape.jpg" alt="Third slide"></div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+		</div>
+		<div class="container-fluid" style="padding: 0px;">
+		<div class="col-md-2" style="float: left;background-color: burlywood;height:120%;padding-right: 0px;"></div>
+		<!--SideBar-->	
+		<div id="DivSideBarIndex" class="col-md-2" style="float: left;border-right: thick solid #e5e3e0;height: 110%;border-width: 2px;background-color: ;"></div>
+		<div class="col-md-6" style="float: left;overflow: hidden;">
+			<h2 style="font-weight: bold;">
+				雅舍介紹 :
+			</h2>
+			<h3 style="line-height: 35px;">
+				雅舍套房租屋距離后里車站10分鐘車程，離后里市區中心只需步行5分鐘，
+				方便逛街購物，鬧中取靜，地點適中，緊鄰黃昏市場，前有公車站牌，
+				交通實為便利。房內潔淨明亮，空間寬敞，內部設計別緻，並具消防設備，
+				外面備有RO逆滲透飲水機，房客可安心飲用，一切以提供安全舒適的住宿環境為目標。
+			</h3>		
+			<h2 style="font-weight: bold;">
+				核心價值觀：
+			</h2>
+			<h3 style="line-height: 35px;">
+				以美好的心，欣賞每一件事。<br />
+				以真誠的心，對待每一個人。<br />
+				以負責的心，完成份內的事。<br />
+				以謙誠的心，檢討自己的對與錯。<br />
+				以愉悅的心，分享快樂。<br />
+			</h3>
+			<h2 style="font-weight: bold;">
+				我們的位置 :
+			</h2>
+			<div id="map" style="height: 50%;width: 50%;"></div>
+			<hr class="featurette-divider">
+			<footer id="footer"></footer>
+		</div>
+		<div class="col-md-2" style="float: left;background-color: burlywood;height: 120%;padding-right: 0px;">
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src="js/function.js"></script>
+		<script src="js/Index/IndexAboutNavAndSide.js"></script>
+		<script src="js/Index/IndexAbout.js"></script>
+		<!--<script src="/Scripts/AssetsBS3/docs.min.js"></script>
+		<script src="/Scripts/AssetsBS3/ie10-viewport-bug-workaround.js"></script>
+		<div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" title="" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;" data-original-title="Copy to clipboard"> <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">         <param name="movie" value="../../../Content/AssetsBS3/flash/ZeroClipboard.swf?noCache=1477137023054">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=kkbruce.tw%2C%2F%2Fkkbruce.tw%2Chttps%3A%2F%2Fkkbruce.tw">         <embed src="../../../Content/AssetsBS3/flash/ZeroClipboard.swf?noCache=1477137023054" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=kkbruce.tw%2C%2F%2Fkkbruce.tw%2Chttps%3A%2F%2Fkkbruce.tw" scale="exactfit">                </object></div>-->
+		<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="visibility: hidden; position: absolute; top: -100%; left: -100%;">
+			<defs></defs><text x="0" y="23" style="font-weight:bold;font-size:23pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle">500x500</text></svg>
+	</body>
+
+</html>
